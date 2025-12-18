@@ -1,0 +1,19 @@
+Question:-- 
+Sample Input 
+
+1 10 31 54 1 61
+Sample Output 
+2
+----------------------------------------------
+lii=list(map(int,input().split()))
+occ={}
+li=[]
+for i in lii:
+    if i in occ:
+        occ[i]+=1
+    else:
+        occ[i]=1
+for key,value in sorted(occ.items()):
+    if value>1:
+        li.append(value)
+print(max(li))
