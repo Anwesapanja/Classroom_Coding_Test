@@ -1,0 +1,20 @@
+Question:--------
+Sample Input 
+4
+23 56 45 342
+Sample Output 
+13
+Explanation 
+Here, N = 4, List L(N) = {23,56,45,342}. So, after taking all the minimum digits of each number. We get 2,5,4,2. After adding all the minimum digits , sum S = 2 + 5 + 4 + 2 = 13, which is printed as the output.
+-------------------------------------------------------------------------------------
+
+def num(n):
+    digit=[int (d) for d in str(n)]
+    return min(digit)
+n=int(input())
+s,m=0,0
+lii=list(map(int,input().split()))
+for i in lii:
+    m=num(i)
+    s+=m
+print(s)
