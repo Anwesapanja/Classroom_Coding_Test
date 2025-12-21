@@ -1,0 +1,24 @@
+Sample Input 0
+
+10 15
+Sample Output 0
+
+6
+Explanation 0
+
+The 150 sq.unit Rectangular plot can be divided into 150 of 1 sq.unit or 6 Plots of 25 sq.unit plot is integer.
+
+Sample Input 1
+
+7 11
+Sample Output 1
+
+77
+Explanation 1
+
+This 77 sq.unit Rectangular Plot can only be divided into 77 plots of 1sq.units.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+import math
+L,B=map(int,input().split())
+g=math.gcd(L,B)
+print((L*B)//(g*g))
