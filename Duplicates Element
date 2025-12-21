@@ -1,0 +1,31 @@
+Sample Input 0
+
+4
+10 20 30 20
+Sample Output 0
+
+20
+Sample Input 1
+
+10
+54 41 78 96 54 36 41 25 47 96
+Sample Output 1
+
+41 54 96 
+-----------------------------------------------------
+n=int(input())
+lii=list(map(int,input().split()))
+occ={}
+li=[]
+for i in lii:
+    if i in occ:
+        occ[i]+=1
+    else:
+        occ[i]=1
+for key,value in sorted(occ.items()):
+    if(value>1):
+        li.append(key)
+if li==[]:
+    print('The list is empty')
+else:
+    print(*li)
