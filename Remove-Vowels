@@ -1,0 +1,14 @@
+Sample Input 0
+
+thismanhere
+Sample Output 0
+
+thsmnhr
+-------------------------------------------------------------------
+s=input()
+a=''
+for j in s:
+    if((j!='a'and j!='e'and j!='i'and j!='o'and j!='u')and(j!='A'and j!='E'and j!='I'and j!='O'and j!='U')):
+        a=a+j
+print(a)
+        
